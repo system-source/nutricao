@@ -2,19 +2,19 @@
 
 	require_once __DIR__ .'/Dominio.php';
 
-	class Alimento extends Dominio {
+	class Unidade extends Dominio {
 		
 		public $id;
 		public $nome;
-		public $codigo;
+		public $sigla;
 		
 		public function __construct() {
 			parent::__construct();
 		}
 		
-		public function buscarAlimento() {
+		public function buscar() {
 			try {
-				$consulta = "select * from alimento";
+				$consulta = "select * from unidade";
 				return $this->repositorio->buscar_arr($consulta);
 			} catch (Exception $e) {
 				throw $e; 
@@ -23,11 +23,11 @@
 		
 		public function inserir() {
 			
-			$campos = array("nome","codigo_taco");
-			$valores = array("'". $this->nome ."'", $this->codigo);
+			$campos = array("nome","sigla");
+			$valores = array("'". $this->nome ."'", $this->sigla);
 			
 			try {
-				return $this->repositorio->inserir("alimento", $campos, $valores);
+				return $this->repositorio->inserir("unidade", $campos, $valores);
 			} catch (Exception $e) {
 				throw $e;
 			}

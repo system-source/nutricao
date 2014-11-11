@@ -47,7 +47,7 @@ class RepositorioPDO implements Repositorio {
 			if (!is_null($this->conexao->errorCode()) && $this->conexao->errorCode() != '00000') {
 				throw new Exception($this->conexao->errorInfo()[2]);
 			}
-			return $exec();
+			return $exec;
 		} catch (Exception $e) {
 			throw $e;
 		}
@@ -73,7 +73,7 @@ class RepositorioPDO implements Repositorio {
 	
 	public function inserir($dominio, $campos, $valores) {
 		
-		$sql = montarSQLInsert($dominio, $campos, $valores);
+		$sql = $this->montarSQLInsert($dominio, $campos, $valores);
 		try {
 			$this->executar($sql);
 		} catch (Exception $e) {

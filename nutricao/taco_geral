@@ -421,7 +421,7 @@ Alimento	Descrição dos alimentos	(%)	(kcal)	(kJ)	(g)	(g)	(mg)	(g)	(g)	(g)	(mg)
 								Carbo-	Fibra																			Vitamina
 Número do		Umidade	Energia		Proteína	Lipídeos	Colesterol	idrato	Alimentar	Cinzas	Cálcio	Magnésio	Número do	Manganês	Fósforo	Ferro	Sódio	Potássio	Cobre	Zinco	Retinol	RE	RAE 	Tiamina	Riboflavina	Piridoxina	Niacina	C
 Alimento	Descrição dos alimentos	(%)	(kcal)	(kJ)	(g)	(g)	(mg)	(g)	(g)	(g)	(mg)	(mg)	Alimento	(mg)	(mg)	(mg)	(mg)	(mg)	(mg)	(mg)	(mcg)	(mcg)	(mcg)	(mg)	(mg)	(mg)	(mg)	(mg)
-373	Carne, bovina, paleta, com gordura, crua	70,6	159	664	21,4	7,5	58	0,0	NA	0,9	4	14	373	Tr	158	1,8	65	250	0,08	3,7	Tr	Tr	Tr	Tr	0,04	,0,02	0,91	
+373	Carne, bovina, paleta, com gordura, crua	70,6	159	664	21,4	7,5	58	0,0	NA	0,9	4	14	373	Tr	158	1,8	65	250	0,08	3,7	Tr	Tr	Tr	Tr	0,04	0,02	0,91	
 374	Carne, bovina, paleta, sem gordura, cozida	62,9	194	810	29,7	7,4	56	0,0	NA	0,8	6	18	374	Tr	197	2,2	58	250	0,10	6,8	Tr	Tr	Tr	0,03	0,04	Tr	2,16	
 375	Carne, bovina, paleta, sem gordura, crua	72,1	141	590	21,0	5,7	42	0,0	NA	1,0	4	18	375	Tr	163	1,9	66	319	0,05	3,3	3	3	3	0,13	0,21	Tr	2,67	
 376	Carne, bovina, patinho, sem gordura, cru	72,9	133	558	21,7	4,5	56	0,0	NA	1,0	3	20	376	0,01	170	1,8	49	318	0,05	4,5	2	2	2	0,11	0,08	Tr	3,61	

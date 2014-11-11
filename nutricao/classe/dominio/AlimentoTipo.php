@@ -37,7 +37,16 @@
 			$valores = array("'". $this->nome ."'");
 			
 			try {
-				return $this->repositorio->inserir("alimento_tipo", $campos, $valores);
+				$tipos = $this->buscarAlimentoTipo($this->nome);
+				if (count($tipos) == 0) {
+					$inseriu = $this->repositorio->inserir("alimento_tipo", $campos, $valores);
+					//caso ocorra algum problema, uma exceção estoura e essa parte não é executada
+					$this->id = $this->buscarAlimentoTipo($this->nome)[0]["alimento_tipo_id"];
+					return $inseriu;
+				} else {
+					$this->id = $tipos[0]["alimento_tipo_id"];
+					throw new Exception("Banco possui registro com mesmo valor"); 
+				}
 			} catch (Exception $e) {
 				throw $e;
 			}
